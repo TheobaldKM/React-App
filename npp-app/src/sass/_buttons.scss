@@ -1,0 +1,75 @@
+@mixin btn {
+    font-family: $lex;
+    font-weight: 600;
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 24px;
+    height: auto;
+    transition: 0.5s;
+    letter-spacing: .5px;
+    width: auto;
+    border-radius: 40px;
+    text-decoration: none;
+    width: 100%;
+    //max-width: 272px; 
+    @include ease(.4s);
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn,
+body .button-style,
+.gform_footer input[type="submit"] {
+    @include btn;
+}
+
+@mixin btn-color($bg-color, $text-color, $hover-bg, $hover-text-color, $border-color, $border-hover-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: 2px solid $border-color;
+
+    &:hover {
+        background-color: $hover-bg !important;
+        color: $hover-text-color;
+        border: 2px solid $border-hover-color;
+    }
+}
+
+.gform_footer input[type="submit"],
+.btn-green {
+    @include btn-color($green, $white, $white, $green, $green, $green);
+}
+
+.btn-outline {
+    @include btn-color($white, $green, $green, $white, $green, $green);
+}
+
+.std-link {
+    font-size: 15px;
+    font-weight: 600;
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.std-link-green {
+    font-size: 15px;
+    font-weight: 600;
+    color: $green;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: $green;
+    }
+}

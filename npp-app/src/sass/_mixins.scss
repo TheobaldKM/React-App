@@ -1,0 +1,40 @@
+@mixin body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin font($size, $height) {
+    font-size: $size  !important;
+    line-height: $height  !important;
+}
+
+@mixin ease($time) {
+    -webkit-transition: ease $time;
+    transition: ease $time;
+}
+
+@mixin headings($size, $family, $color, $transform, $weight, $height, $style, $spacing) {
+    font-size: $size;
+    font-family: $family;
+    color: $color;
+    text-transform: $transform;
+    font-weight: $weight;
+    line-height: $height;
+    font-style: $style;
+    letter-spacing: $spacing;
+}
+
+@mixin paragraph($size, $family, $color, $line-height) {
+    font-size: $size  !important;
+    font-family: $family  !important;
+    color: $color;
+    line-height: $line-height;
+}
+
+@mixin fontawesome {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}

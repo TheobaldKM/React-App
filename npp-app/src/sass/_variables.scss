@@ -1,0 +1,54 @@
+$black: #000000;
+$white: #ffffff;
+$green: #29C45F;
+$dark-green: #4C695E;
+$pale: #DFF6E7;
+$grey: #F4F4F4;
+$dark-grey: #959595;
+$pale-yellow: #FFF8E0;
+$pale-blue: #E0F7F9;
+$blue: #2672B4;
+$pale-two: #EFFAF3;
+$pale-three: #F5FCF8;
+
+.color_black {
+    color: $black;
+}
+
+.color_white {
+    color: $white;
+}
+
+.color_green {
+    color: $green;
+}
+
+.color_dark-green {
+    color: $dark-green;
+}
+
+.bg_black {
+    background-color: $black;
+}
+
+.bg_white {
+    background-color: $white;
+}
+
+.bg_green {
+    background-color: $green;
+}
+
+.bg_dark-green {
+    background-color: $dark-green;
+}
+
+.bg_pale-yellow {
+    background-color: $pale-yellow;
+}
+
+.bg_pale-blue {
+    background-color: $pale-blue;
+}
+
+$filter-brown: brightness(0) saturate(100%) invert(95%) sepia(37%) saturate(411%) hue-rotate(307deg) brightness(91%) contrast(94%);
