@@ -1,6 +1,6 @@
 # React-App
 
-A full-stack web application built with React and Node.js, designed to manage plants, and community gardening efforts.
+A full-stack web application built with React and Node.js, designed to manage plants, and community gardening efforts. Built as capstone project at QUT by team of students. 
 
 ## 🌟 Features
 - 🌿 View available free native plants 
